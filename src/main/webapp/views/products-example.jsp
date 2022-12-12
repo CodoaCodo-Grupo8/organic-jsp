@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>hello</h1>
+ 	<div>
+    	<c:forEach var="product" items="${products}">
+	 		<p><c:out value="${product.name}" /></p>
+		 	<p><c:out value="${product.price}" /><p>
+		 	<img src="${product.image}" />
+		</c:forEach>       	
+ 	</div>
 </body>
 </html>

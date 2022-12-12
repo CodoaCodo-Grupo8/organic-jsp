@@ -1,5 +1,6 @@
 package DAO;
 
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -14,14 +15,14 @@ public class UserDAO implements DAO<User> {
 		
 		String rawQuery = "insert into users";
 		rawQuery += " (email, password)";
-		rawQuery += " values (?, ?)"; // mind the gap
+		rawQuery += " values (?, ?)";
 		
-		var query = connection.prepareStatement(rawQuery);
+		PreparedStatement preparedStatement = connection.prepareStatement(rawQuery);
 		
-		query.setString(1, user.getEmail());
-		query.setString(2, user.getPassword());
+		preparedStatement.setString(1, user.getEmail());
+		preparedStatement.setString(2, user.getPassword());
 		
-		query.executeUpdate();
+		preparedStatement.executeUpdate();
 		
 		connection.close();
 	}
