@@ -1,6 +1,7 @@
 package DAO;
 
 import java.math.BigDecimal;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,7 +15,7 @@ public class ProductDAO implements DAO<Product> {
 
 	@Override
 	public void insert(Product product) throws SQLException {
-		var connection = ConnectionFactory.getConnection();
+		Connection connection = ConnectionFactory.getConnection();
 		
 		String rawQuery = "insert into products";
 		rawQuery += " (name, description, price, image, category_id)";
@@ -34,61 +35,54 @@ public class ProductDAO implements DAO<Product> {
 	}
 
 	@Override
-	public void update(Product model) throws SQLException {
-        var connection = ConnectionFactory.getConnection();
+	public void update(Product product) throws SQLException {
+        Connection connection = ConnectionFactory.getConnection();
 		
 		String rawQuery = "update products set";
 		
-		rawQuery += " name = " + model.getName() ;
-		rawQuery += " description = " + model.getDescription() ;
-		rawQuery += " price = " + model.getPrice() ;
-		rawQuery += " image = " + model.getImage() ;
-		rawQuery += " category_id = " + model.getCategoryId() ;
-		
-		rawQuery += " where id = " + model.getId(); 
-		
+		rawQuery += " name = " + product.getName() ;
+		rawQuery += " description = " + product.getDescription() ;
+		rawQuery += " price = " + product.getPrice() ;
+		rawQuery += " image = " + product.getImage() ;
+		rawQuery += " category_id = " + product.getCategoryId() ;
+
+		rawQuery += " where id = " + product.getId(); 
+
 		PreparedStatement preparedStatement = connection.prepareStatement(rawQuery);
-		
-		
+
 		preparedStatement.executeUpdate();
-		
+
 		connection.close();
-		
 	}
 
 	@Override
 	public void delete(int id) throws SQLException {
-		 var connection = ConnectionFactory.getConnection();
+		Connection connection = ConnectionFactory.getConnection();
 			
 		String rawQuery = "delete from products";
-			
+
 		rawQuery += " where id = " + id; 
-		 
-			
+
 		PreparedStatement preparedStatement = connection.prepareStatement(rawQuery);
-			
-			
+
 		preparedStatement.executeUpdate();
-			
+
 		connection.close();
-		
 	}
 
 	@Override
 	public Product getById(int id) throws SQLException {
-		var connection = ConnectionFactory.getConnection();
+		Connection connection = ConnectionFactory.getConnection();
 		
 		String rawQuery = "select * from products";
 		
 		rawQuery += " where id = " + id; 
-		
 		
 		PreparedStatement preparedStatement = connection.prepareStatement(rawQuery);
 		
 		preparedStatement.executeUpdate();
 		
 		ResultSet result = preparedStatement.executeQuery();
-		
 		
 		String name = result.getString("name");
 		String description = result.getString("description");
@@ -98,18 +92,16 @@ public class ProductDAO implements DAO<Product> {
 		
 		connection.close();
 		
-		Product producto = new Product(id, name, description, price, image, categoryId);
+		Product product = new Product(id, name, description, price, image, categoryId);
 		
-		
-		
-		return producto;
+		return product;
 	}
 
 	@Override
 	public List<Product> getAll() throws SQLException {
 		List<Product> products = new ArrayList<Product>();
 		
-		var connection = ConnectionFactory.getConnection();
+		Connection connection = ConnectionFactory.getConnection();
 		
 		String rawQuery = "select * from products";
 		
