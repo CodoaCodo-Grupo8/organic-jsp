@@ -1,3 +1,5 @@
+console.log('this is a change');
+
 const paymentMethodsSection = document.querySelector('.payment-methods-section')
 
 const paymentMethods = [
