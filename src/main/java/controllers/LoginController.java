@@ -34,12 +34,12 @@ public class LoginController extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/organic", "root", "");
 			
-			String username = request.getParameter("username");
+			String email = request.getParameter("email");
 			String password = request.getParameter("password");
 			
-			PreparedStatement ps = con.prepareStatement("select username from usuarios where username=? and password=?");
+			PreparedStatement ps = con.prepareStatement("select email from users where email=? and password=?");
 			
-			ps.setString(1, username);
+			ps.setString(1, email);
 			ps.setString(2, password);
 			
 			ResultSet rs = ps.executeQuery();
