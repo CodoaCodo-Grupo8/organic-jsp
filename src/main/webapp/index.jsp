@@ -44,10 +44,10 @@
             <a class="nav-link fs-6 fst-normal text-dark" href="./public/views/products.jsp">Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6 fst-normal text-dark" href="./Login/index.html">Iniciar sesión</a>
+            <a class="nav-link fs-6 fst-normal text-dark" href="./public/views/login.jsp">Iniciar sesión</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6 fst-normal text-dark" href="./Login/index.html">Registrarse</a>
+            <a class="nav-link fs-6 fst-normal text-dark" href="./public/views/register.jsp">Registrarse</a>
           </li>
         </ul>
       </div>
