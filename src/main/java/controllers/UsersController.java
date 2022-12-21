@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 import DAO.UserDAO;
 
-@WebServlet("/users")
+@WebServlet("/register")
 public class UsersController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -8,7 +8,7 @@ public class ConnectionFactory {
 	private static final String SERVER = "jdbc:mysql://localhost:3306";
 	private static final String BASE = "organic";
 	private static final String USER = "root";
-	private static final String PASSWORD = "";
+	private static final String PASSWORD = "123456";
 	
 	public static Connection getConnection() throws SQLException {
 		try {

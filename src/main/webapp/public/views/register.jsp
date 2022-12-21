@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="post" action="./users">
+	<form method="post" action="./register">
 		<div>
 			<input type="text" name="email" />
 		</div>
 		<div>
-			<input type="text" name="password" />
+			<input type="password" name="password" />
 		</div>
 		<div>
 			<button type="submit">send</button>
