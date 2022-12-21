@@ -177,3 +177,8 @@ body {
 .button{
   background-color:#9CC95C;
 }
+
+.navbar{ 
+    background-image: var(--bs-gradient);
+    background-color: #343a40; 
+}

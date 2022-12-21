@@ -31,7 +31,7 @@
         <img src="./public/images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top  fst-normal fs-8">
       </a>
      
-      <a class="navbar-brand  fs-6 fst-normal" href="./"> Organicamente</a>
+      <a class="navbar-brand  fs-6 fst-normal" href="./"> Orgánicamente</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

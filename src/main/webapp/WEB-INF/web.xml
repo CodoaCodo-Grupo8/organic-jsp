@@ -30,19 +30,29 @@
     <url-pattern>/ProductsController</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>default</servlet-name>
-  	<url-pattern>*.png</url-pattern>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.png</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>default</servlet-name>
-  	<url-pattern>*.jpg</url-pattern>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.jpg</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>default</servlet-name>
-  	<url-pattern>*.js</url-pattern>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.js</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>default</servlet-name>
-  	<url-pattern>*.css</url-pattern>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.css</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginController</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>controllers.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
   </servlet-mapping>
 </web-app>
