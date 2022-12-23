@@ -69,14 +69,19 @@
 							<p class="text-center">Es gratis y podrás acceder a grandes beneficios</p>
 							<div class="d-flex justify-content-center">
 								<form method="post" action="./register">
-									<div>
-										<input type="text" name="email" />
+									<div class="form-floating mb-3">
+										<input type="email" name="email" class="form-control"
+											   id="floatingInput" placeholder="Ingresa tu email">
+										<label for="floatingInput">Ingresa tu email</label>
 									</div>
-									<div>
-										<input type="password" name="password" />
+									<div class="form-floating mb-3">
+										<input type="password" name="password" class="form-control"
+											   id="floatingPassword" placeholder="Ingresa tu contraseña">
+										<label for="floatingPassword">Ingresa tu contraseña</label>
 									</div>
-									<div>
-										<button type="submit">send</button>
+									<div class="d-grid pt-3">
+										<button class="btn btn-success btn-login text-uppercase fw-bold"
+												type="submit">Registrarse</button>
 									</div>
 								</form>
 							</div>
