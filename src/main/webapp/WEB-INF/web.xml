@@ -46,13 +46,14 @@
     <url-pattern>*.css</url-pattern>
   </servlet-mapping>
   <servlet>
-    <description></description>
     <display-name>LoginController</display-name>
     <servlet-name>LoginController</servlet-name>
-    <servlet-class>controllers.LoginController<servlet-mapping>
+    <servlet-class>controllers.LoginController</servlet-class>
+    </servlet>
+     <servlet-mapping>
     <servlet-name>LoginController</servlet-name>
     <url-pattern>/LoginController</url-pattern>
-  </servlet-mapping></servlet-class>
-  </servlet>
+  </servlet-mapping>
+ 
   
 </web-app>
