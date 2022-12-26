@@ -45,11 +45,11 @@ public class ProductsController extends HttpServlet {
     private void listProducts(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, IOException, ServletException {
     	String title = "Productos / Organicamente";
-    	
+ 
         List<Product> productList = productDAO.getAll();
         request.setAttribute("title", title);
         request.setAttribute("products", productList);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("views/products.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("public/views/products.jsp");
         dispatcher.forward(request, response);
     }
 }

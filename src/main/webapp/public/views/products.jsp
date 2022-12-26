@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Filtrando elementos</title>
-<link rel="stylesheet" href="./public/css/tienda.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/public/css/tienda.css">
    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -28,7 +28,7 @@
 	        </div>
 	        <section class="products-list">
 	            <c:forEach var="product" items="${products}">
-		    	   	<div class="product-item" category="${product.category}">
+		    	   	<div class="product-item">
 			              <img src="${product.image}" height="200" width="260" alt="Imagen de producto">
 			              <a href="#">${product.name}</a>
 			              <div><span>Precio: $<label>${product.price}</label></span></div>
