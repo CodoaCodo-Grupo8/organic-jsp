@@ -16,6 +16,38 @@
     defer></script>
 </head>
 <body>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg  bg-white  ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./">
+        <img src="./public/images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top  fst-normal fs-8">
+      </a>
+     
+      <a class="navbar-brand  fs-6 fst-normal" href="./"> Orgánicamente</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link  fs-6 fst-normal text-dark"  href="./">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/products">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-6 fst-normal text-dark" href="./public/views/login.jsp">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-6 fst-normal text-dark" href="./public/views/register.jsp">Registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
  	<div class="wrap ">
  	    <h1> Escoge un producto </h1>
  	     <div class="store-wrapper">
@@ -50,6 +82,31 @@
             <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
         </div>
     </div>
+    
+    <!-- Footer -->
+  <nav class="d-flex justify-content-center navbar navbar-expand-sm bg-white  navbar-dark" >
+
+    <div class="d-flex justify-content-center">
+
+       <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <p class="nav-link  fs-6 fst-normal text-dark">Nosotros</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link  fs-6 fst-normal text-dark">Bolsones</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link fs-6 fst-normal text-dark">Contacto</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link fs-6 fst-normal text-dark">Certificaciones</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
  	
 </body>
 </html>
