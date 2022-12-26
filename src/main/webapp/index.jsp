@@ -41,7 +41,7 @@
             <a class="nav-link  fs-6 fst-normal text-dark"  href="./">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6 fst-normal text-dark" href="./public/views/products.jsp">Tienda</a>
+            <a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/products">Tienda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fs-6 fst-normal text-dark" href="./public/views/login.jsp">Iniciar sesión</a>
@@ -70,7 +70,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Bienvenido a Organicamente</h5>
             <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="./public/views/products.jsp">Ver productos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
           </div>
         </div>
         <div style="height: 700px" class="carousel-item">
@@ -78,7 +78,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Bienvenido a Organicamente</h5>
             <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="./public/views/products.jsp">Ver productos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
           </div>
         </div>
         <div style="height: 700px" class="carousel-item">
@@ -86,7 +86,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Bienvenido a Organicamente</h5>
             <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="./public/views/products.jsp">Ver productos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
           </div>
         </div>
         <div style="height: 700px" class="carousel-item">
@@ -94,7 +94,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Bienvenido a Organicamente</h5>
             <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="./public/views/products.jsp">Ver productos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
           </div>
         </div>
         <div style="height: 700px" class="carousel-item">
@@ -102,7 +102,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Bienvenido a Organicamente</h5>
             <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="./public/views/products.jsp">Ver productos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
           </div>
         </div>
       </div>
