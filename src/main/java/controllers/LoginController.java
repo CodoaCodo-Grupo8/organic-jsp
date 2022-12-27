@@ -10,25 +10,23 @@ import java.sql.SQLException;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+@WebServlet("/login")
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+      
     public LoginController() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+  
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
 		try {
 			PrintWriter out = response.getWriter();
 			Class.forName("com.mysql.jdbc.Driver");
@@ -67,5 +65,13 @@ public class LoginController extends HttpServlet {
 		}
 		
 	}
+	
+	 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	    	response.getWriter().append("Served at: ").append(request.getContextPath());
+	    	RequestDispatcher dispatcher = request.getRequestDispatcher("public/views/login.jsp");
+	        dispatcher.forward(request, response);
+	    	
+			
+		}
 
 }

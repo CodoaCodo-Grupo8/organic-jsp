@@ -10,9 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orgánicamente</title>
   <!-- style sheet -->
-  <link rel="stylesheet" href="./public/css/styles.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/public/css/styles.css">
   <!-- icon -->
-  <link rel="icon" href="./public/images/logo.png" type="icon">
+  <link rel="icon" href="${pageContext.request.contextPath}/public/images/logo.png" type="icon">
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <!-- font awesome icons -->
@@ -44,10 +44,10 @@
             <a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/products">Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6 fst-normal text-dark" href="./public/views/login.jsp">Iniciar sesión</a>
+            <a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/login">Iniciar sesión</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6 fst-normal text-dark" href="./public/views/register.jsp">Registrarse</a>
+            <a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/register">Registrarse</a>
           </li>
         </ul>
       </div>
@@ -82,7 +82,7 @@
           </div>
         </div>
         <div style="height: 700px" class="carousel-item">
-          <img src="./public/images/carousel/fruits.jpg" class="d-block w-100" alt="2">
+          <img src="./public/images/carousel/pizza.jpg" class="d-block w-100" alt="2">
           <div class="carousel-caption d-none d-md-block">
             <h5>Bienvenido a Organicamente</h5>
             <p>Tu tienda de alimentos orgánicos</p>
@@ -128,14 +128,12 @@
   </div>
 
   <!-- Footer -->
-  <nav class="d-flex justify-content-center navbar navbar-expand-sm bg-white  navbar-dark" >
-
-    <div class="d-flex justify-content-center">
-
-       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+  <footer class="d-flex mt-auto pt-2 justify-content-center " >
+ 	<div class="row text-center pt-2">
+            <div class="col-md-12 ">
+        <ul class="nav col mx-auto justify-content-center">
           <li class="nav-item">
-            <p class="nav-link  fs-6 fst-normal text-dark">Nosotros</p>
+            <p class="nav-link  fs-6 fst-normal link-dark">Nosotros</p>
           </li>
           <li class="nav-item">
             <p class="nav-link  fs-6 fst-normal text-dark">Bolsones</p>
@@ -147,9 +145,10 @@
             <p class="nav-link fs-6 fst-normal text-dark">Certificaciones</p>
           </li>
         </ul>
-      </div>
-
-    </div>
-  </nav>
+       </div>
+     </div>
+        
+      
+  </footer>
 </body>
 </html>

@@ -8,17 +8,17 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Organicamente</title>
+	<title>Orgánicamente</title>
 	<!-- style sheet -->
-	<link rel="stylesheet" href="../../public/css/styles.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/public/css/styles.css">
 	<!-- icon -->
-	<link rel="icon" href="../../public/images/logo.png" type="icon">
+	<link rel="icon" href="${pageContext.request.contextPath}/public/images/logo.png" type="icon">
 	<!-- font -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 	<!-- font awesome icons -->
 	<script src="https://kit.fontawesome.com/47a442944c.js"></script>
 	<!-- javascript -->
-	<script src="../../public/js/index.js" type="text/javascript" defer></script>
+	<script src="${pageContext.request.contextPath}/public/js/index.js" type="text/javascript" defer></script>
 	<!-- bootsrap CDN -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
@@ -28,7 +28,7 @@
 <nav class="navbar navbar-expand-lg  bg-white  ">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="./">
-			<img src="../images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top  fst-normal fs-8">
+			<img src="${pageContext.request.contextPath}/public/images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top  fst-normal fs-8">
 		</a>
 
 		<a class="navbar-brand  fs-6 fst-normal" href="./"> Orgánicamente</a>
@@ -41,13 +41,13 @@
 					<a class="nav-link  fs-6 fst-normal text-dark"  href="./">Inicio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link fs-6 fst-normal text-dark" href="./products.jsp">Tienda</a>
+					<a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/products">Tienda</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link fs-6 fst-normal text-dark" href="./login.jsp">Iniciar sesión</a>
+					<a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/login">Iniciar sesión</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link fs-6 fst-normal text-dark" href="./register.jsp">Registrarse</a>
+					<a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/register">Registrarse</a>
 				</li>
 			</ul>
 		</div>
@@ -55,16 +55,16 @@
 </nav>
 
 <section class="vh-100 bg-image"
-		 style="background-image: url(https://cdn.buttercms.com/Sx9UXawNQsm0sbpvIaUX); background-size: cover">
+		 style="background-image: url(https://lisuto.com/wp-content/uploads/2020/08/Online_grocery_shopping_tablet_1.png); background-size: cover">
 	<div class="mask d-flex align-items-center h-100 gradient-custom-3">
-		<div class="container h-100">
-			<div class="row d-flex justify-content-center align-items-center h-100">
+		<div class="container h-100 ms-5 ps-5">
+			<div class="row d-flex ps-5 justify-content-left align-items-center h-100">
 				<div class="col-12 col-md-9 col-lg-7 col-xl-6">
 					<div class="card" style="border-radius: 15px;">
 						<div class="card-body p-5">
-							<img src="../../public/images/logo.png" class="rounded mx-auto d-block" alt="logo" style="max-width: 40%">
+							<img src="${pageContext.request.contextPath}/public/images/logo.png" class="rounded mx-auto d-block" alt="logo" style="max-width: 40%">
 							<h2 class="text-center mb-1">¡Bienvenido a Orgánicamente!</h2>
-							<h3 class="text-center mb-1">Inicia sesión </h3>
+							<h5 class="text-center mb-1">Para empezar, regístrate en dos simples pasos</h5>
 
 							<p class="text-center">Es gratis y podrás acceder a grandes beneficios</p>
 							<div class="d-flex justify-content-center">
@@ -79,6 +79,15 @@
 											   id="floatingPassword" placeholder="Ingresa tu contraseña">
 										<label for="floatingPassword">Ingresa tu contraseña</label>
 									</div>
+									<div class="form-check">
+			                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+			                            <label class="form-check-label" for="invalidCheck">
+			                              Acepto los términos y condiciones
+			                            </label>
+			                            <div class="invalid-feedback">
+			                              Debes aceptar para poder registrarte.
+			                            </div>
+			                          </div>
 									<div class="d-grid pt-3">
 										<button class="btn btn-success btn-login text-uppercase fw-bold"
 												type="submit">Registrarse</button>
@@ -98,28 +107,27 @@
 
 
 <!-- Footer -->
-<nav class="d-flex justify-content-center navbar navbar-expand-sm bg-white  navbar-dark" >
-
-	<div class="d-flex justify-content-center">
-
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<p class="nav-link  fs-6 fst-normal text-dark">Nosotros</p>
-				</li>
-				<li class="nav-item">
-					<p class="nav-link  fs-6 fst-normal text-dark">Bolsones</p>
-				</li>
-				<li class="nav-item">
-					<p class="nav-link fs-6 fst-normal text-dark">Contacto</p>
-				</li>
-				<li class="nav-item">
-					<p class="nav-link fs-6 fst-normal text-dark">Certificaciones</p>
-				</li>
-			</ul>
-		</div>
-
-	</div>
-</nav>
+<footer class="d-flex mt-auto pt-2 justify-content-center " >
+ 	<div class="row text-center pt-2">
+            <div class="col-md-12 ">
+        <ul class="nav col mx-auto justify-content-center">
+          <li class="nav-item">
+            <p class="nav-link  fs-6 fst-normal link-dark">Nosotros</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link  fs-6 fst-normal text-dark">Bolsones</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link fs-6 fst-normal text-dark">Contacto</p>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link fs-6 fst-normal text-dark">Certificaciones</p>
+          </li>
+        </ul>
+       </div>
+     </div>
+        
+      
+  </footer>
 </body>
 </html>

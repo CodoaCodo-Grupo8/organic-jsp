@@ -8,17 +8,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Organicamente</title>
+  <title>Orgánicamente</title>
   <!-- style sheet -->
-  <link rel="stylesheet" href="../../public/css/styles.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/public/css/styles.css">
   <!-- icon -->
-  <link rel="icon" href="../../public/images/logo.png" type="icon">
+  <link rel="icon" href="${pageContext.request.contextPath}/public/images/logo.png" type="icon">
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/47a442944c.js"></script>
   <!-- javascript -->
-  <script src="../../public/js/index.js" type="text/javascript" defer></script>
+  <script src="${pageContext.request.contextPath}/public/js/index.js" type="text/javascript" defer></script>
   <!-- bootsrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
@@ -28,7 +28,7 @@
   <nav class="navbar navbar-expand-lg  bg-white  ">
     <div class="container-fluid">
       <a class="navbar-brand" href="./">
-        <img src="../images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top  fst-normal fs-8">
+        <img src="${pageContext.request.contextPath}/public/images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top  fst-normal fs-8">
       </a>
      
       <a class="navbar-brand  fs-6 fst-normal" href="./"> Orgánicamente</a>
@@ -41,13 +41,13 @@
             <a class="nav-link  fs-6 fst-normal text-dark"  href="./">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6 fst-normal text-dark" href="./products.jsp">Tienda</a>
+            <a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/products">Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6 fst-normal text-dark" href="./login.jsp">Iniciar sesión</a>
+            <a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/login">Iniciar sesión</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6 fst-normal text-dark" href="./register.jsp">Registrarse</a>
+            <a class="nav-link fs-6 fst-normal text-dark" href="${pageContext.request.contextPath}/register">Registrarse</a>
           </li>
         </ul>
       </div>
@@ -62,11 +62,10 @@
             <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div class="card" style="border-radius: 15px;">
                 <div class="card-body p-5">
-                <img src="../../public/images/logo.png" class="rounded mx-auto d-block" alt="logo" style="max-width: 40%">
+                <img src="${pageContext.request.contextPath}/public/images/logo.png" class="rounded mx-auto d-block" alt="logo" style="max-width: 40%">
                     <h2 class="text-center mb-1">¡Bienvenido a Orgánicamente!</h2>
-                    <h3 class="text-center mb-1">Inicia sesión </h3>
+                    <h3 class="text-center mb-4">Inicia sesión </h3>
           
-                    <p class="text-center">Es gratis y podrás acceder a grandes beneficios</p>
                     <div class="d-flex justify-content-center">
                         <form action="LoginController" method="post">
 							<div class="form-floating mb-3">
@@ -88,7 +87,7 @@
 							</div>
 							<hr class="my-3">
 							<p class="medium fw-bold   mb-0">
-								¿No tienes una cuenta? <a href="./register.jsp"
+								¿No tienes una cuenta? <a href="${pageContext.request.contextPath}/register"
 								class="link-danger">Regístrate aquí</a>
 							</p>
 
@@ -107,14 +106,12 @@
 
 
 	<!-- Footer -->
-  <nav class="d-flex justify-content-center navbar navbar-expand-sm bg-white  navbar-dark" >
-
-    <div class="d-flex justify-content-center">
-
-       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+  <footer class="d-flex mt-auto pt-2 justify-content-center " >
+ 	<div class="row text-center pt-2">
+            <div class="col-md-12 ">
+        <ul class="nav col mx-auto justify-content-center">
           <li class="nav-item">
-            <p class="nav-link  fs-6 fst-normal text-dark">Nosotros</p>
+            <p class="nav-link  fs-6 fst-normal link-dark">Nosotros</p>
           </li>
           <li class="nav-item">
             <p class="nav-link  fs-6 fst-normal text-dark">Bolsones</p>
@@ -126,10 +123,11 @@
             <p class="nav-link fs-6 fst-normal text-dark">Certificaciones</p>
           </li>
         </ul>
-      </div>
-
-    </div>
-  </nav>
+       </div>
+     </div>
+        
+      
+  </footer>
 </body>
 </html>
 
