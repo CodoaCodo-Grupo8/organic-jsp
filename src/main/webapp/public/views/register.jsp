@@ -64,7 +64,7 @@
 						<div class="card-body p-5">
 							<img src="${pageContext.request.contextPath}/public/images/logo.png" class="rounded mx-auto d-block" alt="logo" style="max-width: 40%">
 							<h2 class="text-center mb-1">¡Bienvenido a Orgánicamente!</h2>
-							<h5 class="text-center mb-1">Para empezar, regístrate en dos simples pasos</h5>
+							<h4 class="text-center mb-1">Regístrate en dos simples pasos</h4>
 
 							<p class="text-center">Es gratis y podrás acceder a grandes beneficios</p>
 							<div class="d-flex justify-content-center">
