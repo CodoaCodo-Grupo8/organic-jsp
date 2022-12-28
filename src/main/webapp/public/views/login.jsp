@@ -67,7 +67,7 @@
                     <h3 class="text-center mb-4">Inicia sesión </h3>
           
                     <div class="d-flex justify-content-center">
-                        <form action="LoginController" method="post">
+                        <form action=LoginController method=post>
 							<div class="form-floating mb-3">
 									<input type="email" name="email" class="form-control"
 										id="floatingInput" placeholder="Ingresa tu email">

@@ -48,7 +48,7 @@ public class LoginController extends HttpServlet {
 				rd.forward(request, response);
 			} else {
 				
-				out.println("<a href=./login.jsp font color=red size=18> Los datos ingresados no coinciden. Intentelo nuevamente. <br>");
+				out.println("<a href=./login font color=red size=18> Los datos ingresados no coinciden. Intentelo nuevamente. <br>");
 				
 			}
 					
