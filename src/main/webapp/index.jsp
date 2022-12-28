@@ -68,41 +68,41 @@
         <div style="height: 700px" class="carousel-item active">
           <img src="./public/images/carousel/fruits-and-vegetables.jpg" class="d-block w-100" alt="0">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Bienvenido a Organicamente</h5>
+           <h4>Bienvenido a Organicamente</h4>
             <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver Tienda</a></p>
           </div>
         </div>
         <div style="height: 700px" class="carousel-item">
           <img src="./public/images/carousel/woman-buying-1.jpg" class="d-block w-100" alt="1">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Bienvenido a Organicamente</h5>
+            <h4>Bienvenido a Organicamente</h4>
             <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver Tienda</a></p>
           </div>
         </div>
         <div style="height: 700px" class="carousel-item">
           <img src="./public/images/carousel/pizza.jpg" class="d-block w-100" alt="2">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Bienvenido a Organicamente</h5>
-            <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
+            <h4>Bienvenido a Organicamente</h4>
+            <p>Tenemos las mejores pizzas hechas con productos 100% naturales</p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver Tienda</a></p>
           </div>
         </div>
         <div style="height: 700px" class="carousel-item">
           <img src="./public/images/carousel/vegetables.png" class="d-block w-100" alt="3">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Bienvenido a Organicamente</h5>
-            <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
+            <h4>Bienvenido a Organicamente</h4>
+            <p>Directo de la huerta a tu hogar</p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver Tienda</a></p>
           </div>
         </div>
         <div style="height: 700px" class="carousel-item">
           <img src="./public/images/carousel/woman-buying-2.jpg" class="d-block w-100" alt="4">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Bienvenido a Organicamente</h5>
-            <p>Tu tienda de alimentos orgánicos</p>
-            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver productos</a></p>
+           <h4>Bienvenido a Organicamente</h4>
+            <p>Contamos con todos los medios de pago</p>
+            <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/products">Ver Tienda</a></p>
           </div>
         </div>
       </div>
